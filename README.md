@@ -31,4 +31,52 @@
 - 需要有 Python 3.9 环境。推荐使用 Miniforge，安装过程可参考 CSDN 中 Yabooo0 的文章：《Ubuntu 中安装 Miniforge》。使用 `conda` 创建一个新的环境用于配置大语言程序：
   ```bash
   conda create -n vlm python=3.9
+
+- 如果使用lcm通信，那么安装lcm-1.3.1
+  ```bash
+  sudo apt-get install open-8-jdk
+  # 进入lcm文件夹
+  ./configure
+  # 确保jave support 打开，然后
+  make
+  sudo make install
+  sudo ldconfig
+
+- 然后激活创建的conda环境
+  ```bash
+  conda activate vlm
+
+- 开始配置大语言程序的环境（可以直接运行vlm_demo文件夹中的doggy.py程序看看缺少什么功能包，直接安装即可）
+  ```bash
+  # 安装依赖项
+  sudo apt-get install libasound-dev portaudio19-dev libportaudio2 libportaudiocpp0
+  pip install pyaudio
+  pip install pyalsaaudio
+  pip install numpy==1.16.4
+  # cv_bridge报错修复numpy即可
+  pip install pydub
+  pip install appbuilder-sdk
+  pip install qianfan
+  pip install openai
+  pip install lcm
+  pip install rospkg
+  pip insyall catkin-tools
+  pip install opencv-python
+  pip install pillow
+  # roscore报错libroscppp.so 时，输入
+  sudo setcap -r /usr/bin/python3.8（每次重新开机都要输入）
+
+- 安装ROS
+  ```bash
+  # 按照国内鱼香肉丝一键安装ROS教程进行安装
+  wget http://fishros.com/install -O fishros && . fishros
+
+### 3.3 程序运行
+  ```bash
+  # 在一个终端输入
+  roscore
+  # 在另一个激活vlm环境的终端输入
+  python doggy.py
+
+## 4. 特别鸣谢
  ---
