@@ -81,8 +81,9 @@
   python vlm_demo/doggy.py
 
 ## 4. 特别鸣谢
-本项目是基于同济子豪兄的具身智能机械臂进一步开发的，特别感谢哔哩哔哩Up主同济子豪兄的开源项目：
-开源代码：https://github.com/TommyZihao/vlm_arm
-亚马逊云科技生成式AI平台Amazon Bedrock：https://aws.amazon.com/cn/bedrock
-哔哩哔哩视频：https://www.bilibili.com/video/BV1Cn4y1R7V2/?spm_id_from=333.337.search-card.all.click&vd_source=4bfff5ac9a1ffa49a122fe82b1f1d682
+- 本项目是基于同济子豪兄的具身智能机械臂进一步开发的，特别感谢哔哩哔哩Up主同济子豪兄的开源项目：
+- 开源代码：https://github.com/TommyZihao/vlm_arm
+- 亚马逊云科技生成式AI平台Amazon Bedrock：https://aws.amazon.com/cn/bedrock
+- 哔哩哔哩视频：https://www.bilibili.com/video/BV1Cn4y1R7V2/?spm_id_from=333.337.search-card.all.click&vd_source=4bfff5ac9a1ffa49a122fe82b1f1d682
+
  ---
