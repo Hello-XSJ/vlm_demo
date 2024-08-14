@@ -24,4 +24,11 @@
   - [百度千帆](https://qianfan.cloud.baidu.com)
   - [零一万物](https://www.lingyiwanwu.com)
 
+### 3.2 配置相关环境
+
+以下是在 RDK 平台上配置的详细步骤，PC 机上的配置流程基本一致：
+
+- 需要有 Python 3.9 环境。推荐使用 Miniforge，安装过程可参考 CSDN 中 Yabooo0 的文章：《Ubuntu 中安装 Miniforge》。使用 `conda` 创建一个新的环境用于配置大语言程序：
+  ```bash
+  conda create -n vlm python=3.9
  ---
